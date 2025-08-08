@@ -10,66 +10,74 @@
 function setReleaseNumber() {
 case $1 in
 1)
+	myapiversion=1.17.0
+	myReleaseBuildNumber=1.17.0
+;;
+2)
+  myapiversion=1.16.0
+  myReleaseBuildNumber=1.16.0
+;;
+3)
 	myapiversion=1.15.0
 	myReleaseBuildNumber=1.15.0
 ;;
-2)
+4)
 	myapiversion=1.14.0
 	myReleaseBuildNumber=1.14.0
 ;;
-3)
+5)
 	myapiversion=1.13.0
 	myReleaseBuildNumber=1.13.0
 ;;
-4)
+6)
 	myapiversion=1.12.0
 	myReleaseBuildNumber=1.12.0
 ;;
-5)
+7)
   myapiversion=1.11.0
 	myReleaseBuildNumber=1.11.0
 ;;
-6)
+8)
 	myapiversion=1.10.0
 	myReleaseBuildNumber=1.10.0
 ;;
-7)
+9)
 	myapiversion=1.9.0
 	myReleaseBuildNumber=1.9.0
 ;;
-8)
+10)
 	myapiversion=1.8.0
 	myReleaseBuildNumber=1.8.0
 ;;
-9)
+11)
 	myapiversion=1.7.0
 	myReleaseBuildNumber=1.7.0
 ;;
-10)
+12)
 	myapiversion=1.6.0
 	myReleaseBuildNumber=1.6.0
 ;;
-11)
+13)
 	myapiversion=1.5.0
 	myReleaseBuildNumber=1.5.0
 ;;
-12)
+14)
 	myapiversion=1.4.0
 	myReleaseBuildNumber=1.4.0
 ;;
-13)
+15)
 	myapiversion=1.3.0
 	myReleaseBuildNumber=1.3.0
 ;;
-14)
+16)
 	myapiversion=1.2.56
 	myReleaseBuildNumber=1.2.56
 ;;
-15)
+17)
 	myapiversion=1.1.0
 	myReleaseBuildNumber=1.1.0-69
 ;;
-16)
+18)
 	myapiversion=1.0.0
 	myReleaseBuildNumber=1.0.0.30
 ;;
@@ -155,26 +163,28 @@ case $1 in
     API_VERSIONS+=(13 "1.0.0 (PolyScope SW 3.3.0 or newer required)" )
 ;;
 2)
-    softwareVersion=5.18.0
+    softwareVersion=5.21.0
     compatibilitytext="Only compatible with e-Series"
     cb3compatible=false
     eseriescompatible=true
-    API_VERSIONS+=( 1 "1.15.0 (PolyScope SW ${softwareVersion} or newer required)" )
-    API_VERSIONS+=( 2 "1.14.0 (PolyScope SW 5.15.0 or newer required)" )
-    API_VERSIONS+=( 3 "1.13.0 (PolyScope SW 5.11.0 or newer required)" )
-    API_VERSIONS+=( 4 "1.12.0 (PolyScope SW 5.10.0 or newer required)" )
-    API_VERSIONS+=( 5 "1.11.0 (PolyScope SW 5.9.0 or newer required)" )
-    API_VERSIONS+=( 6 "1.10.0 (PolyScope SW 5.8.0 or newer required)" )
-    API_VERSIONS+=( 7 "1.9.0 (PolyScope SW 5.6.0 or newer required)")
-    API_VERSIONS+=( 8 "1.8.0 (PolyScope SW 5.5.0 or newer required)" )
-    API_VERSIONS+=( 9 "1.7.0 (PolyScope SW 5.4.0 or newer required)" )
-    API_VERSIONS+=( 10 "1.6.0 (PolyScope SW 5.3.0 or newer required)" )
-    API_VERSIONS+=( 11 "1.5.0 (PolyScope SW 5.2.0 or newer required)" )
-    API_VERSIONS+=( 12 "1.4.0 (PolyScope SW 5.1.0 or newer required)" )
-    API_VERSIONS+=( 13 "1.3.0 (PolyScope SW 5.0.0 or newer required)" )
-    API_VERSIONS+=( 14 "1.2.56 (PolyScope SW 5.0.0 or newer required)" )
-    API_VERSIONS+=( 15 "1.1.0 (PolyScope SW 5.0.0 or newer required)" )
-    API_VERSIONS+=( 16 "1.0.0 (PolyScope SW 5.0.0 or newer required)" )
+    API_VERSIONS+=( 1 "1.17.0 (PolyScope SW ${softwareVersion} or newer required)" )
+    API_VERSIONS+=( 2 "1.16.0 (PolyScope SW 5.20.0 or newer required)" )
+    API_VERSIONS+=( 3 "1.15.0 (PolyScope SW 5.18.0 or newer required)" )
+    API_VERSIONS+=( 4 "1.14.0 (PolyScope SW 5.15.0 or newer required)" )
+    API_VERSIONS+=( 5 "1.13.0 (PolyScope SW 5.11.0 or newer required)" )
+    API_VERSIONS+=( 6 "1.12.0 (PolyScope SW 5.10.0 or newer required)" )
+    API_VERSIONS+=( 7 "1.11.0 (PolyScope SW 5.9.0 or newer required)" )
+    API_VERSIONS+=( 8 "1.10.0 (PolyScope SW 5.8.0 or newer required)" )
+    API_VERSIONS+=( 9 "1.9.0 (PolyScope SW 5.6.0 or newer required)")
+    API_VERSIONS+=( 10 "1.8.0 (PolyScope SW 5.5.0 or newer required)" )
+    API_VERSIONS+=( 11 "1.7.0 (PolyScope SW 5.4.0 or newer required)" )
+    API_VERSIONS+=( 12 "1.6.0 (PolyScope SW 5.3.0 or newer required)" )
+    API_VERSIONS+=( 13 "1.5.0 (PolyScope SW 5.2.0 or newer required)" )
+    API_VERSIONS+=( 14 "1.4.0 (PolyScope SW 5.1.0 or newer required)" )
+    API_VERSIONS+=( 15 "1.3.0 (PolyScope SW 5.0.0 or newer required)" )
+    API_VERSIONS+=( 16 "1.2.56 (PolyScope SW 5.0.0 or newer required)" )
+    API_VERSIONS+=( 17 "1.1.0 (PolyScope SW 5.0.0 or newer required)" )
+    API_VERSIONS+=( 18 "1.0.0 (PolyScope SW 5.0.0 or newer required)" )
 ;;
 3)
     compatibilitytext="Compatible with CB3 and e-Series"
@@ -199,9 +209,9 @@ esac
 
 mygroupid="com.yourcompany"
 myartifactid="thenewapp"
-myapiversion="1.15.0"
+myapiversion="1.17.0"
 
-myReleaseBuildNumber=1.15.0
+myReleaseBuildNumber=1.17.0
 
 compatibilitytext="Compatible with CB3 and e-Series"
 compatibilitytag=""
@@ -303,7 +313,7 @@ mvn archetype:generate \
   -DinteractiveMode=false \
   -DarchetypeGroupId=com.ur.urcap \
   -DarchetypeArtifactId=archetype \
-  -DarchetypeVersion=1.15.0 \
+  -DarchetypeVersion=1.17.0 \
   "-Dpackage=$mypackage.impl" \
   "-DgroupId=$mygroupid" \
   "-DartifactId=$myartifactid" \
