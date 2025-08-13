@@ -5,9 +5,9 @@ _**Prerequisites:** You must have [Git](https://git-scm.com/downloads), [Visual 
 
 
 If you are using Windows, you need to perform these steps before proceeding:
-1. Open Git Bash from the Start menu as adminstrator.
+1. Open Git Bash from the Start menu as administrator.
 2. Run ```git config --system core.longpaths true``` in the terminal.
-3. Ensure that your wsl engine is installed correctly and up to date.
+3. Ensure that your WSL engine is installed correctly and up to date.
    
 
 ## Setup
@@ -15,26 +15,26 @@ If you are using Windows, you need to perform these steps before proceeding:
 2. Install the [Remote Development extension pack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack) for Visual Studio Code.
 3. Open Visual Studio Code.
 4. Type ```Ctrl+Shift+G``` to open source control. It should also be the third icon from the top on the left side of the screen.  
-5. Enter ```https://github.com/pheobeyeung/universal_robots_sdk``` as the remote repository to clone, and pick a desired location to save onto your drive.
-6. Open the cloned repository in VSCode, and reopen in Dev container when prompted. This may take several minutes to load. 
+5. Enter ```https://github.com/jbetsinger/universal_robots_sdk``` as the remote repository to clone, and pick a desired location to save onto your drive.
+6. Open the cloned repository in VSCode, and reopen the Dev container when prompted. This may take several minutes to load. 
    _6a.  If the prompt does not automatically pop up, you can reopen the folder in a dev container by accessing the command palette through:_
     * ```Ctrl+Shift+P``` _on Windows/Linux_
     * ```Command+Shift+P``` _on Mac_
    _and search for_ **Dev Containers: Reopen in Container**
-7. Type ```Ctrl+`+Shift``` to open the Terminal. Congrats! The SDK environment is now successfully setup!
+7. Type ```Ctrl+`+Shift``` to open the Terminal. Congrats! The SDK environment is now successfully set up!
 
 
 ## Development
-The [Universal Robots API](https://www.universal-robots.com/articles/ur/urplus-resources/api-reference-docs/) provides insight to the capabilities of what you can do with a URCap. There are also PDF tutorials in the ```/universal_robots_sdk/doc``` folder as well.
-URCap java swing examples can be found in the ```/universal_robots_sdk/samples/``` folder. 
-The ```myURCaps/``` folder is referenced in the .gitignore file, meaning that the contents are not tracked by git. Put your own projects inside this directory to ensure that it is unaffected when pulling SDK updates.
+The [Universal Robots API](https://www.universal-robots.com/articles/ur/urplus-resources/api-reference-docs/) provides insight into the capabilities of what you can do with a URCap. There are also PDF tutorials in the ```/universal_robots_sdk/doc``` folder as well.
+URCap Java Swing examples can be found in the ```/universal_robots_sdk/samples/``` folder. 
+The ```myURCaps/``` folder is referenced in the .gitignore file, meaning that the contents are not tracked by git. Put your projects inside this directory to ensure that it is unaffected when pulling SDK updates.
 
 #### New URCap
 In order to create a new URCap, enter these commands:
 ```$ cd ~/universal_robots_sdk```
 ```$ ./newURCap.sh```
 
-Fill out the appropriate forms and generate a new maven project. 
+Fill out the appropriate forms and generate a new Maven project. 
 
 #### Build URCap
 In order to build the URCap, navigate to the folder that contains the project folder. This folder should contain the pom.xml file. From there, edit the pom.xml file so that the line that asks for: 
@@ -54,7 +54,7 @@ The .urcap file can be found in the /target folder of the project folder.
 To run URSim, run these commands in the terminal:
 ```$ cd /universal_robots_sdk```
 ```$ ./startURSim.sh```
-If the simulator does not work, try to refresh the link that opens on the browser, or open this [link](http://localhost:6080/vnc.html?host=localhost&port=6080) manually to start the PolyScope simulator.
+If the simulator does not work, try to refresh the link that opens in the browser, or open this [link](http://localhost:6080/vnc.html?host=localhost&port=6080) manually to start the PolyScope simulator.
 
 
 
