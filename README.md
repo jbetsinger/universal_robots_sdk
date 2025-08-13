@@ -1,7 +1,7 @@
 # Universal Robots SDK
 This is the Universal Robots SDK, integrated into a Visual Studio Code development container through Docker. This allows developers and users to develop and deploy URCaps more efficiently, without requiring a virtual machine. 
 
-_**Prerequisites:** You must have [Git](https://git-scm.com/downloads), [Visual Studio Code](https://code.visualstudio.com/download), and [Docker](https://www.docker.com/products/docker-desktop/) installed and configured._
+_**Prerequisites:** You must have [Git](https://git-scm.com/downloads), [Visual Studio Code](https://code.visualstudio.com/download), and [Docker](https://www.docker.com/products/docker-desktop/) or [Podman](https://podman-desktop.io/) installed and configured._
 
 
 If you are using Windows, you need to perform these steps before proceeding:
